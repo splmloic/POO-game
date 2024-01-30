@@ -49,7 +49,7 @@ class HumanPlayer < Player
         weapon = rand(1..6)
         puts "Tu as trouvé une arme de niveau #{weapon}"
         if weapon > @weapon_level
-            @weapon_level == weapon
+            @weapon_level = weapon
             puts "Youhou ! elle est meilleure que ton arme actuelle : tu la prends."
         else
             puts "Merde, cette arme est une arme de daube"
