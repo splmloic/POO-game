@@ -32,7 +32,7 @@ class HumanPlayer < Player
     attr_accessor :name, :life_point, :weapon_level
 
     def initialize(name)
-        @name = name.to_s
+        @name = name
         @life_point = 100
         @weapon_level = 1
     end
