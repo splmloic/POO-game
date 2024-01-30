@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+ruby '3.2.2'
+gem 'pry'
+gem 'launchy'
+gem 'dotenv'
+gem 'nokogiri', '~> 1.16'
+gem 'open-uri'
+gem 'bundler'
