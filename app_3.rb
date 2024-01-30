@@ -11,11 +11,12 @@ puts "-------------------------------------------------"
 puts " "
 puts "Jeune aventurier quel est ton nom ?"
 print "> "
-user = HumanPlayer.new(gets.chomp.to_s)
+name = HumanPlayer.new(gets.chomp.to_s)
 
-my_game = Game.new(user)
+my_game = Game.new(name)
 
 while my_game.is_still_ongoing?
+    my_game.new_players_in_sight
     puts "=============================================================="
     my_game.show_players
     puts "=============================================================="
@@ -29,4 +30,4 @@ while my_game.is_still_ongoing?
     my_game.enemies_attack if my_game.is_still_ongoing?
 end
   
-  my_game.end
+my_game.end
